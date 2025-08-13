@@ -1,0 +1,79 @@
+/* Apply a colorful gradient background to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff6a00, #ee0979, #00c9ff, #92fe9d);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+}
+
+/* Animate the gradient */
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Center headings and add spacing */
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style images to have borders and slight rounding */
+img {
+    display: block;
+    margin: 10px auto;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Nested list styles */
+ol {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+ul {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    list-style-type: circle;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Style marquee elements for better visibility */
+marquee {
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Marked text style */
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+/* Bolded text styles */
+b, strong {
+    color: #ffeb3b;
+}
+
+/* Paragraph improvements */
+p {
+    padding: 0 20px;
+    line-height: 1.5;
+    font-size: 16px;
+}
